@@ -156,7 +156,7 @@ header .layout-wide {
     background-color: var(--alternative-bg-color);
     position: sticky;
     top: 0;
-    
+
 }
 
 .nav-prompt {
@@ -167,6 +167,10 @@ header .layout-wide {
     padding-bottom: var(--padder);
     border: none;
     border-top: 1px solid #000;
+}
+
+.nav-inner {
+    margin-bottom: 0;
 }
 
 .nav-inner ul {
@@ -273,3 +277,32 @@ input[type="submit"]:hover {
 }
 
 /* -------------------------- MODULES  */
+
+/* hero module */
+
+.hero-module img {
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+
+    .hero-module {
+        position: relative;
+    }
+
+    .hero-content {
+        position: absolute;
+        bottom: 0;
+
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .heading-main {
+        color: var(--alternative-text-color);
+        text-shadow: 0px 1px 10px var(--strong-text-color);
+    }
+}
